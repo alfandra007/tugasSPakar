@@ -64,3 +64,37 @@ hasil yang akan dilakukan ditampilkan dengan kodingan
 
        print("HASIL = ",bfs(peta1,'C','J'))
        print("\n peta = ",peta1)
+       
+      
+# Analisis DFS
+ saya akan lanjut saja kepada kondisi yang diperlukan 
+ 
+        while stack:
+        panjang_tumpukan = len(stack)-1
+  hitung panjang tumpukan dan masukkan ke variabel panjang_tumpukan
+        
+        jalur = stack.pop(panjang_tumpukan)
+        print("\n --------------------- \n")
+        print("panjang tumpukan = ", panjang_tumpukan)
+        print("jalur = ", jalur)
+        print("stack = ", stack)
+   untuk memasukkan tumpukan palinif state == tujuan:g atas ke variabel jalur
+
+        state = jalur[-1]
+        print ("state = ", state)
+   untuk menyimpan node yang dipilih ke variabel state, misal jalur = C,B maka simpan B ke variabel state
+   
+  untuk mengecek state apakah sama dengan tujuan maka dipakai 
+  
+         if state == tujuan:
+            return jalur
+  jika state tidak sama dengan tujuan, maka cek apakah state tidak ada di visited
+  
+        elif state not in visited:
+  jika state tidak ada di visited maka cek cabang
+  
+            for cabang in graf.get(state, []): #cek semua cabang dari state
+                if cabang not in visited:
+                    jalur_baru = list(jalur) #masukkan isi dari variabel jalur ke variabel jalur_baru
+                    jalur_baru.append(cabang) #update/tambah isi jalur_baru dengan cabang
+                    stack.append(jalur_baru) #update/tambah queue dengan jalur_baru
