@@ -1,0 +1,2 @@
+# tugasSPakar
+tugas kuliah sistempakar
