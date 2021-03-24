@@ -65,6 +65,8 @@ hasil yang akan dilakukan ditampilkan dengan kodingan
        print("HASIL = ",bfs(peta1,'C','J'))
        print("\n peta = ",peta1)
        
+ Fungsi BFS disini adalah untuk menentukan jalur yang akan dikunjungi secara berurutan dan menjelaskan area yang akan dikunjugi dalam peta
+       
       
 # Analisis DFS
  saya akan lanjut saja kepada kondisi yang diperlukan 
@@ -98,3 +100,5 @@ hasil yang akan dilakukan ditampilkan dengan kodingan
                     jalur_baru = list(jalur) #masukkan isi dari variabel jalur ke variabel jalur_baru
                     jalur_baru.append(cabang) #update/tambah isi jalur_baru dengan cabang
                     stack.append(jalur_baru) #update/tambah queue dengan jalur_baru
+                    
+  Fungsi DFS disini menuliskan tempat yang akan dikunjungi menggunakan jalur tercepat dalam peta
