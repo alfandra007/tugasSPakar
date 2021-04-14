@@ -102,3 +102,38 @@ hasil yang akan dilakukan ditampilkan dengan kodingan
                     stack.append(jalur_baru) #update/tambah queue dengan jalur_baru
                     
   Fungsi DFS disini menuliskan tempat yang akan dikunjungi menggunakan jalur tercepat dalam peta
+  
+  # SKFUZZY
+  
+  logika Fuzzy adalah teknik atau metode yang dipakai untuk mengatasi hal yang tidak pasti pada masalah – masalah yang mempunyai banyak jawaban
+
+Study kasus yang saya ambil adalah pemberian tip yang tepat untuk diberikan ketika makan di sebuah Hotel menggunakan algoritma Skfuzzy
+
+Pemberian tip dinilai berdasarkan 2 penilaian yaitu kualitas dan pelayanan yang diberikan
+
+Tip disini dibagi menjadi 3 kategori yaitu
+
+Rendah
+Sedang
+Tinggi
+Pelayanan dibagi menjadi 3 kategori yaitu
+
+Buruk
+Dapat diterima
+Luar biasa
+Kualitas dibagi menjadi 3 kategori yaitu
+
+Buruk
+Layak
+Hebat
+Pemberian tip berdasarkan Rules(aturan) yang dibuat yaitu
+
+JIKA layanan baik atau yang kualitas makanan baik, MAKA tipnya akan tinggi.
+JIKA layanannya biasa -biasa saja, MAKA tipnya sedang.
+JIKA layanan Buruk dan yang kualitas makanan Buruk maka tipnya akan rendah.
+Contoh pemberian penilaian kualitas dan pelayanan untuk menentukan tip :
+
+layanan = 8.5
+kualitasnya = 9.9
+Maka tip yang harus saya berikan menurut rule yang telah dibentuk adalah 33.9645453718
+  
